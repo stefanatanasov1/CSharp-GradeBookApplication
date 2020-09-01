@@ -186,7 +186,6 @@ namespace GradeBook.GradeBooks
                 Console.WriteLine("Average for only international students is " + (internationalPoints / Students.Where(e => e.Enrollment == EnrollmentType.International).Count()));
             if (standardPoints != 0)
                 Console.WriteLine("Average for students excluding honors and dual enrollment is " + (standardPoints / Students.Where(e => e.Type == StudentType.Standard).Count()));
-            if (honorPoints != 0)
                 Console.WriteLine("Average for only honors students is " + (honorPoints / Students.Where(e => e.Type == StudentType.Honors).Count()));
             if (dualEnrolledPoints != 0)
                 Console.WriteLine("Average for only dual enrolled students is " + (dualEnrolledPoints / Students.Where(e => e.Type == StudentType.DualEnrolled).Count()));
